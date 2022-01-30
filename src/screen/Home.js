@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-  <div className='home' style={{ backgroundImage: `url("../assets/image/homebg.png")` }}>
+  <div className='home' >
+  <div className="home-container" style={{ backgroundImage: `url("../assets/image/homebg2.png")` }}>
+
+ 
       <Navbar collapseOnSelect expand="lg"  variant="dark">
           <Container className="nav-pad">
               <Col md={8}>
@@ -33,18 +36,40 @@ function Home() {
 
         <Container className='home-2'>
           <Row>
-            <h1>Book Your Stay <br /> Right Now</h1>
+            <h1>The Tawi Experience</h1>
            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
-          </Row>
+          </Row>              
+        </Container>
 
-          <Row>
-            <p2>Our top recommendation</p2>
-          </Row>
+        <Container className='home-2-bottom'>
+          <Row style={{placeContent:"center"}}>
+            <h1>Title here</h1>
+           <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            {/* <p>Know More</p> */}
+          </Row>              
+        </Container>
+        </div>
+
+      
+      
+      <div className="home-2-container">
+        <Container className='home-2-rec'>
+        <div className='d-flex'>
+          <div>
+          <h1>Our top recommendation</h1>
+          </div>
+           <div  className='home-2-vec'>
+                <img src="../assets/image/down.png" alt="" />
+           </div>    
+          </div>
         </Container>
 
         <Container className='home-3'>
+       
           <Row>
             <Col style={{padding:"0px"}} md={3} className='home-3-img'>
               <img src="../assets/image/home2.png" alt="" />
@@ -123,6 +148,47 @@ function Home() {
           </Row>
         </Container>
 
+        <Container className='home-3'>
+          <Row>
+            <Col style={{padding:"0px"}} md={3} className='home-3-img'>
+              <img src="../assets/image/home3.png" alt="" />
+            </Col>
+            <Col>
+             <Container>
+             <Row>
+                  <h1>Paradise Island Resort & Spa</h1>
+              </Row>
+              <Row >
+                <Col md={5} className='home-3-1'>
+                  <img src="../assets/image/location.png" alt="" /> Maldives
+                </Col>
+              </Row>
+                <Row>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </Row>
+
+                <Row className='home-3-2'>
+                  <Col>
+                     <p3>Rated <span>4 out of 5</span> </p3>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                     <p4>₹ 1,20,850</p4>
+                  </Col>
+                  <Col>
+                    <p5></p5>
+                  </Col>
+                </Row>
+             </Container>
+              
+            </Col>
+          </Row>
+        </Container>
+
+        
+        </div>
 
         <div className="about-4" style={{marginTop:"70px"}}>
             <Container>
