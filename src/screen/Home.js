@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <div className="home">
       <div
@@ -48,7 +52,7 @@ function Home() {
           </Container>
         </Navbar>
 
-        <Container className="home-2">
+        {/* <Container className="home-2">
           <Row style={{ justifyContent: 'center' }}>
             <h1>Book your stay.</h1>
             <Row className="home-box">
@@ -84,7 +88,7 @@ function Home() {
                 </Row>
               </Col>
 
-              {/* <Col className="home-box-3">
+              <Col className="home-box-3">
                 <Row>
                   <Col>
                     <h4>Check availability</h4>
@@ -93,10 +97,10 @@ function Home() {
                     <img src="../assets/image/search.png" alt="" />
                   </Col>
                 </Row>
-              </Col> */}
+              </Col> 
             </Row>
           </Row>
-        </Container>
+        </Container> */}
 
         <Container>
           <Row className="home-tawi">
@@ -310,9 +314,9 @@ exercitation ullamco laboris </h2>
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/email.png" alt="" />
-              info@domain.com
+              tawilifestyleconcierge@gmail.com
             </Col>
-            <Col md={3}></Col>
+            <Col md={2}></Col>
           </Row>
 
           <Row className="about-4-2">

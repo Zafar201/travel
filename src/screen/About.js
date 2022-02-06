@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 function About() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <>
       <div
@@ -232,9 +236,9 @@ function About() {
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/email.png" alt="" />
-              info@domain.com
+              tawilifestyleconcierge@gmail.com
             </Col>
-            <Col md={3}></Col>
+            <Col md={2}></Col>
           </Row>
 
           <Row className="about-4-2">

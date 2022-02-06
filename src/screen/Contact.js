@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <>
     <div
@@ -90,7 +93,7 @@ function Contact() {
               <img src="../assets/image/email.png" alt="" />
             </Row>
             <Row className="contact-right2">
-              <p>info@domain.com</p>
+              <p>tawilifestyleconcierge@gmail.com</p>
             </Row>
 
             <Row className="contact-right3">
@@ -133,9 +136,9 @@ function Contact() {
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/email.png" alt="" />
-              info@domain.com
+              tawilifestyleconcierge@gmail.com
             </Col>
-            <Col md={3}></Col>
+            <Col md={2}></Col>
           </Row>
 
           <Row className="about-4-2">
