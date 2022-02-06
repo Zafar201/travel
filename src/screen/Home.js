@@ -1,6 +1,6 @@
-import React from "react";
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -12,8 +12,8 @@ function Home() {
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container className="nav-pad">
             <Col md={8}>
-              <Navbar.Brand href="#home" className="logo">
-                <img src="../assets/image/logo.png" alt="" />
+              <Navbar.Brand className="logo">
+              <Link to="/"> <img src="../assets/image/logo.png" alt="" /></Link>
               </Navbar.Brand>
             </Col>
 
@@ -22,16 +22,16 @@ function Home() {
               <Nav>
                 <Col md={6}>
                   <Link to="/">
-                    {" "}
-                    <Nav.Link href="#deets">Home</Nav.Link>{" "}
-                  </Link>{" "}
+                    {' '}
+                    <Nav.Link href="#deets">Home</Nav.Link>{' '}
+                  </Link>{' '}
                 </Col>
                 <Col md={6}>
                   <Link to="/about">
-                    {" "}
+                    {' '}
                     <Nav.Link
                       href="#deets"
-                      style={{ color: " #D9B061 !important;" }}
+                      style={{ color: ' #D9B061 !important;' }}
                     >
                       About Us
                     </Nav.Link>
@@ -39,7 +39,7 @@ function Home() {
                 </Col>
                 <Col md={6}>
                   <Link to="/contact">
-                    {" "}
+                    {' '}
                     <Nav.Link href="#deets">Contact Us</Nav.Link>
                   </Link>
                 </Col>
@@ -49,203 +49,253 @@ function Home() {
         </Navbar>
 
         <Container className="home-2">
-          <Row style={{ justifyContent: "center" }}>
+          <Row style={{ justifyContent: 'center' }}>
             <h1>Book your stay.</h1>
-            <div className="home-box">
-              <Row>
-                <Col>
-                 <Col>
-                    <img src='../assets/image/logo.png' alt=''/>
-                 </Col>
-                 <Col>
+            <Row className="home-box">
+              <Col className="home-box-1">
+                <Row className='home-box-mob'> 
+                  <Col md={3}>
+                    <img src="../assets/image/Vect.png" alt="" />
+                  </Col>
+                  <Col>
                     <Row>
-                        <p></p>
+                      <h2>Date in</h2>
                     </Row>
                     <Row>
-                         hoyyyy
+                      <p3>Sat, 29 Jan</p3>
                     </Row>
-                 </Col>
+                  </Col>
+                </Row>
+              </Col>
 
-                </Col>
-                <Col></Col>
-                <Col></Col>
-              </Row>
-            </div>
+              <Col className="home-box-2">
+                <Row className='home-box-mob'>
+                  <Col md={3}>
+                    <img src="../assets/image/Vect.png" alt="" />
+                  </Col>
+                  <Col>
+                    <Row>
+                      <h2>Date out</h2>
+                    </Row>
+                    <Row>
+                      <p3>Sat, 29 Jan</p3>
+                    </Row>
+                  </Col>
+                </Row>
+              </Col>
+
+              <Col className="home-box-3">
+                <Row>
+                  <Col>
+                    <h4>Check availability</h4>
+                  </Col>
+                  <Col md={3} style={{ paddingLeft: '0px' }} className='home-search'>
+                    <img src="../assets/image/search.png" alt="" />
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
           </Row>
         </Container>
 
-        <Container className="home-2-bottom">
-          <Row style={{ placeContent: "center" }}>
-            <h1>Title here</h1>
+        <Container>
+          <Row className="home-tawi">
+            <h1>The Tawi Experience</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo
+              The Maldives, the island country with azure water, is the favorite
+              destination for Indians, and Tawi Facilities makes it memorable.
+              The company provides exclusive high-quality luxury and
+              ultra-luxury resorts. Tawi Explores offers travelers the
+              convenience to choose and book the best luxury and ultra-luxury
+              resort online for travelers from all tier cities and towns in
+              India to access the best resorts in the Maldives with a few
+              clicks.
             </p>
-            {/* <p>Know More</p> */}
           </Row>
         </Container>
       </div>
 
       <div className="home-2-container">
-        <Container className="home-2-rec">
-          <div className="d-flex">
-            <div>
-              <h1>Our top recommendation</h1>
-            </div>
-            <div className="home-2-vec">
-              <img src="../assets/image/down.png" alt="" />
-            </div>
-          </div>
+        <Container>
+          <Row className="home-2-explore">
+            <h4>Explore with us</h4>
+            <p>
+              A limitless horizon. Teal skies that melt into turquoise waters,
+              and a gentle breeze that cocoons you. Picture the most
+              breath-taking beach you’ve ever stepped foot on, and an impossibly
+              idyllic island that makes for a dream getaway. <br /> <br />
+              Maldives, officially the Republic of Maldives, is a country in the
+              Indian subcontinent of Asia, situated in the Indian Ocean. It lies
+              southwest of Sri Lanka and India, about 750 kilometres from the
+              Asian continent's mainland. Comprising a territory spanning
+              roughly 90,000 square kilometres including the sea, land area of
+              all the islands comprises 298 square kilometres .
+            </p>
+          </Row>
         </Container>
 
+        <Container className="home-2-rec">
+          <Row>
+            <h1>Experience each moment!</h1>
+          </Row>
+        </Container>
+             
+        <div className='home-card'>     
         <Container className="home-3">
           <Row>
-            <Col style={{ padding: "0px" }} md={3} className="home-3-img">
+            <Col style={{ padding: '0px' }} md={3} className="home-3-img">
               <img src="../assets/image/home2.png" alt="" />
             </Col>
             <Col>
               <Container>
                 <Row>
-                  <h1>Hurawalhi Island Resort</h1>
-                </Row>
-                <Row>
-                  <Col md={5} className="home-3-1">
-                    <img src="../assets/image/location.png" alt="" /> Maldives
-                  </Col>
-                </Row>
+                  <h1>A Romantic experience.</h1>
+                </Row>         
                 <Row>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Wake up to the rhythm of waves washing ashore in the
+                    Maldives. Your loved one is by your side. It’s 14th February
+                    - a very special day indeed. You wonder if you made the
+                    right decision to come to the Maldives for Valentine’s day.
+                    You open the windows to let in the sunshine and the salty
+                    tang of the balmy air. Romance, tranquillity and the sweet
+                    scent of possibilities is in the air. You know you’ve made
+                    the right choice; neither of you would rather be elsewhere.
+                    A day of romance, thrills, and adventure awaits you in the
+                    sunny isles of the Maldives.
                   </p>
                 </Row>
-
-                <Row className="home-3-2">
-                  <Col>
-                    <p3>
-                      Rated <span>4 out of 5</span>{" "}
-                    </p3>
-                  </Col>
-                </Row>
                 <Row>
-                  <Col>
-                    <p4>₹ 1,20,850</p4>
-                  </Col>
-                  <Col>
-                    <p5></p5>
-                  </Col>
+                  <h6>Explore</h6>
                 </Row>
               </Container>
             </Col>
           </Row>
         </Container>
+        </div>
 
+        <div className='home-card'>  
         <Container className="home-3">
           <Row>
-            <Col style={{ padding: "0px" }} md={3} className="home-3-img">
+            <Col style={{ padding: '0px' }} md={3} className="home-3-img">
               <img src="../assets/image/home3.png" alt="" />
             </Col>
             <Col>
               <Container>
                 <Row>
-                  <h1>Paradise Island Resort & Spa</h1>
+                  <h1>Explore the culture!</h1>
                 </Row>
                 <Row>
-                  <Col md={5} className="home-3-1">
+                  {/* <Col md={5} className="home-3-1">
                     <img src="../assets/image/location.png" alt="" /> Maldives
-                  </Col>
+                  </Col> */}
                 </Row>
                 <Row>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Although home to just over half a million people the
+                    Maldives has its own unique culture and traditions. While
+                    heavily influenced by various cultures around the rim of the
+                    Indian Ocean, the Maldivian culture, craft and traditions
+                    have been shaped by the island environment and the seas that
+                    surround us. Maldives, is blessed with picture perfect palm
+                    trees, white sandy beaches, and skies which put on
+                    jaw-dropping displays anytime of the day. There are golden
+                    sunrises, afternoons filled with clear blue skies, cotton
+                    candy sunsets and night skies adorned with billions of
+                    stars. All in all, it’s a veritable heaven for those seeking
+                    to take some pictures for the ‘gram’.
                   </p>
                 </Row>
 
-                <Row className="home-3-2">
-                  <Col>
-                    <p3>
-                      Rated <span>4 out of 5</span>{" "}
-                    </p3>
-                  </Col>
-                </Row>
                 <Row>
-                  <Col>
-                    <p4>₹ 1,20,850</p4>
-                  </Col>
-                  <Col>
-                    <p5></p5>
-                  </Col>
+                  <h6>Explore</h6>
                 </Row>
               </Container>
             </Col>
           </Row>
         </Container>
+        </div>
 
+
+        <div className='home-card'>  
         <Container className="home-3">
           <Row>
-            <Col style={{ padding: "0px" }} md={3} className="home-3-img">
-              <img src="../assets/image/home3.png" alt="" />
+            <Col style={{ padding: '0px' }} md={3} className="home-3-img">
+              <img src="../assets/image/home4.png" alt="" />
             </Col>
             <Col>
               <Container>
                 <Row>
-                  <h1>Paradise Island Resort & Spa</h1>
+                  <h1>Explore the landscape!</h1>
                 </Row>
-                <Row>
+                {/* <Row>
                   <Col md={5} className="home-3-1">
                     <img src="../assets/image/location.png" alt="" /> Maldives
                   </Col>
-                </Row>
+                </Row> */}
                 <Row>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    The country’s unique geography mesmerizes the visitor. Reefs
+                    that offer bands of color, tiny jewel-like islands rimmed
+                    with the whitest of soft sand surrounded by the clearest
+                    shallow waters that one can imagine. Only 200 of the islands
+                    are inhabited, and a select few on each of the atolls are
+                    resorts and some of the islands are used for industry and
+                    agriculture. The beauty of the Maldives is not only above
+                    the water. The Maldives is home to about five percent of the
+                    planet’s reefs that comes with an explosion of color
+                    contributed by soft and hard corals that form them. The
+                    reefs are home to a thousand species of fish. Lured by the
+                    rich nutrients that flow in with the currents, large pelagic
+                    fishes such as manta rays and whale sharks also make the
+                    Maldives their home.
                   </p>
                 </Row>
 
-                <Row className="home-3-2">
-                  <Col>
-                    <p3>
-                      Rated <span>4 out of 5</span>{" "}
-                    </p3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col>
-                    <p4>₹ 1,20,850</p4>
-                  </Col>
-                  <Col>
-                    <p5></p5>
-                  </Col>
-                </Row>
+                <h6>Explore</h6>
+                <Row></Row>
               </Container>
             </Col>
           </Row>
         </Container>
+        </div>
+         
+        <Container>
+        <Row style={{placeContent:"center"}} >
+          <img style={{width:"95px",paddingTop:"78px"}} src="../assets/image/whiteline.png" alt="" />
+        </Row>
+        </Container>
+
+
+        {/* <Container className='home-review'>
+        <Row className='' style={{placeContent:"center",paddingTop:"78px"}} >
+          <h1>Reviews</h1>
+        </Row>
+        <Row>
+          <Col>
+           <Row>
+             <h2>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua.
+ Ut enim ad minim veniam, quis nostrud 
+exercitation ullamco laboris </h2>
+           </Row>
+          </Col>
+          <Col>
+          sdfsdfsd
+          </Col>
+          <Col>
+          sdgdsggggggggg
+          </Col>
+          <Col>
+          sgdsgdfsg
+          </Col>
+        </Row>
+        </Container> */}
+        
       </div>
 
-      <div className="about-4" style={{ marginTop: "70px" }}>
+      <div className="about-4">
         <Container>
           <Row>
             <Col md={3}></Col>
