@@ -7,7 +7,7 @@ function Contact() {
     <>
     <div
       className="contact"
-      style={{ backgroundImage: `url("../assets/image/contactbg.png")` }}
+      style={{ backgroundImage: `url("../assets/image/contactbg3.jpeg")` }}
     >
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container className="nav-pad">

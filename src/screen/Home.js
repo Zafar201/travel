@@ -7,7 +7,7 @@ function Home() {
     <div className="home">
       <div
         className="home-container"
-        style={{ backgroundImage: `url("../assets/image/homebg2.png")` }}
+        style={{ backgroundImage: `url("../assets/image/homebg3.jpeg")` }}
       >
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container className="nav-pad">
@@ -84,7 +84,7 @@ function Home() {
                 </Row>
               </Col>
 
-              <Col className="home-box-3">
+              {/* <Col className="home-box-3">
                 <Row>
                   <Col>
                     <h4>Check availability</h4>
@@ -93,7 +93,7 @@ function Home() {
                     <img src="../assets/image/search.png" alt="" />
                   </Col>
                 </Row>
-              </Col>
+              </Col> */}
             </Row>
           </Row>
         </Container>
@@ -123,7 +123,7 @@ function Home() {
               A limitless horizon. Teal skies that melt into turquoise waters,
               and a gentle breeze that cocoons you. Picture the most
               breath-taking beach you’ve ever stepped foot on, and an impossibly
-              idyllic island that makes for a dream getaway. <br /> <br />
+              idyllic island that makes for a dream getaway. 
               Maldives, officially the Republic of Maldives, is a country in the
               Indian subcontinent of Asia, situated in the Indian Ocean. It lies
               southwest of Sri Lanka and India, about 750 kilometres from the
@@ -166,7 +166,7 @@ function Home() {
                   </p>
                 </Row>
                 <Row>
-                  <h6>Explore</h6>
+                <Link to="/contact">   <h6>Explore</h6> </Link>
                 </Row>
               </Container>
             </Col>
@@ -208,7 +208,7 @@ function Home() {
                 </Row>
 
                 <Row>
-                  <h6>Explore</h6>
+                <Link to="/contact">   <h6>Explore</h6> </Link>
                 </Row>
               </Container>
             </Col>
@@ -252,7 +252,7 @@ function Home() {
                   </p>
                 </Row>
 
-                <h6>Explore</h6>
+                <Link to="/contact">   <h6>Explore</h6> </Link>
                 <Row></Row>
               </Container>
             </Col>
@@ -302,11 +302,11 @@ exercitation ullamco laboris </h2>
 
             <Col className="about-4-fnt">
               <img src="../assets/image/wtsp.png" alt="" />
-              +91 888 777 9999
+              +91 94464 65516
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/phone.png" alt="" />
-              +91 888 777 9999
+              +91 94464 65516
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/email.png" alt="" />
