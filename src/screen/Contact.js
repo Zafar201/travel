@@ -96,6 +96,13 @@ function Contact() {
               <p>tawilifestyleconcierge@gmail.com</p>
             </Row>
 
+            <Row className="contact-right1">
+              <img src="../assets/image/phone.png" alt="" />
+            </Row>
+            <Row className="contact-right2">
+              <p>+91 94464 65516</p>
+            </Row>
+
             <Row className="contact-right3">
               <img src="../assets/image/location2.png" alt="" />
             </Row>
@@ -128,11 +135,11 @@ function Contact() {
 
             <Col className="about-4-fnt">
               <img src="../assets/image/wtsp.png" alt="" />
-              +91 888 777 9999
+              +91 94464 65516
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/phone.png" alt="" />
-              +91 888 777 9999
+              +91 94464 65516
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/email.png" alt="" />
@@ -158,7 +165,7 @@ function Contact() {
             </Col>
             <Col md={7} className="copyright">
               <p>
-                All material herein © 2005–2022 Company Name All Rights
+              All material herein © 2005–2022 TAWI Facilities All Rights
                 Reserved.
               </p>
             </Col>

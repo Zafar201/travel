@@ -336,7 +336,7 @@ exercitation ullamco laboris </h2>
             </Col>
             <Col md={7} className="copyright">
               <p>
-                All material herein © 2005–2022 Company Name All Rights
+              All material herein © 2005–2022 TAWI Facilities All Rights
                 Reserved.
               </p>
             </Col>

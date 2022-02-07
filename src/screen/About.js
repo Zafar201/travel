@@ -228,11 +228,11 @@ function About() {
 
             <Col className="about-4-fnt">
               <img src="../assets/image/wtsp.png" alt="" />
-              +91 888 777 9999
+              +91 94464 65516
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/phone.png" alt="" />
-              +91 888 777 9999
+              +91 94464 65516
             </Col>
             <Col className="about-4-fnt">
               <img src="../assets/image/email.png" alt="" />
@@ -258,7 +258,7 @@ function About() {
             </Col>
             <Col md={7} className="copyright">
               <p>
-                All material herein © 2005–2022 Company Name All Rights
+                All material herein © 2005–2022 TAWI Facilities All Rights
                 Reserved.
               </p>
             </Col>
