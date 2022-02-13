@@ -8,6 +8,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import AdminLogin from './screen/AdminLogin';
+import DashBoard from './screen/DashBoard';
 // import Row,Col,Button from 'react-bootstrap'
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         
       <Route path="about" element={<About/>}>   </Route>  
       <Route path="contact" element={<Contact/>}>   </Route>  
+      <Route path="admin" element={<AdminLogin/>}>   </Route>
+      <Route path="dashboard" element={<DashBoard/>}>   </Route>
     
       
       
